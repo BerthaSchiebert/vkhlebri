@@ -2,19 +2,50 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	
+	.sec-2 .sec-2-item{
+		margin-top: 30px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.sec-7 .sec-2-item{
+		margin: 30px auto 80px;
+	}
+	.sec-4-text {
+	    margin-bottom: 30px;
+	}
+	.sec-2-item{
+		margin: 30px auto;
+	}
+	.header-top{
+		text-align: center;
+	}
+	.logo{
+		margin-bottom: 30px;
+	}
+	.sec-3-item{
+		text-align: center;
+	}
+	.sec-8-item{
+		margin-bottom: 60px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.sec-4{
+		text-align: center;
+	}
 }
 
-
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 640px) {
+	.header-top .btn{
+		margin-top: 20px;
+	}
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 }

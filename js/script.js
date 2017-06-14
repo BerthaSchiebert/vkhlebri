@@ -7,11 +7,24 @@ $(document).ready(function(){
 		loop: true
 	});
 	
+	$('.btn-popup').magnificPopup({
+		type: 'inline'
+	});
+
+	$(".up_button img").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+
+	$(".overlay").click(function(){
+		$(this).remove();
+	});
+	
 });
 
-$(window).scroll(function() {
+$(window).scroll(function(){
 
-	if($(this).scrollTop() >= 300) {
+	if($(this).scrollTop() >= 300){
 		$(".header-top2").addClass("header-visible");
 	}
 	else{

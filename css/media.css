@@ -5,6 +5,12 @@
 	.sec-2 .sec-2-item{
 		margin-top: 30px;
 	}
+	.sc-gotov-item{
+		text-align: center;
+	}
+	.sc-gotov-inner-item{
+		text-align: center;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -21,6 +27,9 @@
 	.header-top{
 		text-align: center;
 	}
+	.header-top2{
+		text-align: center;
+	}
 	.logo{
 		margin-bottom: 30px;
 	}
@@ -30,6 +39,16 @@
 	.sec-8-item{
 		margin-bottom: 60px;
 	}
+	.header-top2 .logo{
+		margin: 0 auto 10px;
+	}
+	.footer-address-wrap{
+		text-align: left;
+		margin-top: 30px;
+	}
+	.form-contact{
+		margin: 30px auto 50px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -38,12 +57,29 @@
 	.sec-4{
 		text-align: center;
 	}
+	.header-top2 .btn-popup{
+		display: block;
+		width: 150px;
+		padding: 8px 17px;
+		margin: 10px auto 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 640px) {
-	.header-top .btn{
-		margin-top: 20px;
+	.header-top .btn-popup{
+		display: block;
+		margin: 10px auto;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px) {
+	.header-top2{
+		text-align: center;
+	}
+	.header-top2 .phone{
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
 }
 /* Extra Small Devices, Phones */

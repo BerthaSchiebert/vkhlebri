@@ -20,6 +20,15 @@
 	.news-text-l{
 		width: 40%;
 	}
+	.menu > li{
+		padding: 22px 17px 15px;
+	}
+	.menu{
+		text-align: center;
+	}
+	.search-wrap{
+		margin: 16px auto;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -74,6 +83,12 @@
 	}
 	.header-top2{
 		display: none!important;
+	}
+	.menu{
+		display: none;
+	}
+	.toggle_mnu{
+		display: block;
 	}
 }
 
@@ -136,7 +151,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.nav{
+		display: none!important;
+	}
 }
 
 /* Large Devices, Wide Screens */

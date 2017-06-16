@@ -141,12 +141,27 @@ a, button, input{
 	outline: none!important;
 }
 .btn-popup:hover,
+.btn:hover{
+	background: #8cbb2b;
+	color: #fbfbfa!important;
+	transition: all .2s ease;
+}
+.btn-popup:hover,
 .btn-popup:focus{
 	color: #fbfbfa;
 	text-decoration: none;
 }
 .header-menu{
 	border-top: 1px solid #e5e5e5;
+}
+.nav li a{
+	text-transform: uppercase;
+	color: #2b2a2a;
+	font-family: "OpenSansSemiBold";
+	font-size: 14px;
+}
+.nav li:hover{
+	background: #e8bc6d!important;
 }
 .menu{
 	padding: 0;
@@ -170,6 +185,9 @@ a, button, input{
 }
 .menu li:hover{
 	background: #e8bc6d;
+}
+.menu li:hover .menu-s{
+	display: block;
 }
 .menu li a.active:after{
 	position: absolute;
@@ -196,6 +214,7 @@ a, button, input{
 	padding: 7px 0 7px 30px;
 	margin-left: -5px;
 	margin-right: 10px;
+	text-align: left;
 }
 .menu-second > li > a{
 	text-transform: capitalize;
@@ -224,6 +243,7 @@ a, button, input{
 	background: url(../img/corner.png);
 	top: -3px;
     left: 0px;
+    display: none;
 }
 .menu-third{
 	display: inline-block;
@@ -237,9 +257,6 @@ a, button, input{
 	position: absolute;
 	z-index: 999;
 	display: none;
-}
-.menu-s.menu-show{
-	display: block;
 }
 .search-wrap{
 	width: 185px;
@@ -440,6 +457,12 @@ a, button, input{
 	margin-top: 35px;
 	display: none;
 }
+.btn-hidden:hover,
+.btn-sec-5:hover{
+	color: #e8bc6d;
+	border: 2px solid #e8bc6d!important;
+	transition: all .2s ease;
+}
 .sec-3{
 	background: #efefef;
 	padding: 39px 0 70px;
@@ -557,6 +580,12 @@ a, button, input{
 	padding: 14px 45px;
 	display: block;
     margin: 40px auto 0;
+}
+.sec-5-all:hover,
+.btn4:hover{
+	color: #ce936d;
+	border: 2px solid #ce936d!important;
+	transition: all .2s ease;
 }
 .sec-6{
 	padding: 50px 0;
@@ -800,7 +829,7 @@ a, button, input{
 #popup-block{
 	background: #efefef;
 	position: relative;
-	width: 440px;
+	max-width: 440px;
 	margin: 0 auto;
 	padding: 30px 25px 40px;
 	font-family: "OpenSansRegular";
@@ -1153,6 +1182,11 @@ a, button, input{
 	padding: 13px 63px;
 	display: block;
 	margin: 0 auto;
+}
+.btn5:hover{
+	color: #a3e026;
+	border: 2px solid #a3e026;
+	transition: all .2s ease;
 }
 .map-contact{
 	margin-top: 30px;
@@ -1541,4 +1575,109 @@ td{
 }
 .tech-info .link-home{
 	margin-top: 60px;
+}
+.toggle_mnu{
+	background-color: transparent;
+	border: medium none;
+	border-radius: 10px;
+	height: 40px;
+	width: 50px;
+	z-index: 100000;
+	top: 40px;
+	right: 30px;
+	cursor: pointer;
+	display: none;
+	margin: auto;
+	vertical-align: middle;
+}
+.toggle_mnu:focus,
+.sandwich.active .sw-topper:focus,
+.sandwich.active .sw-bottom:focus,
+.sandwich.active .sw-footer:focus {
+	outline: none;
+}
+.toggle_mnu span {
+	display: block;
+}
+.sandwich {
+	bottom: 0;
+	height: 38px;
+	margin: auto;
+	width: 50px;
+	z-index: 200;
+	margin-top: 10px;
+}
+.sw-topper {
+	background: #000 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 4px;
+	height: 3px;
+	left: 5px;
+	position: relative;
+	top: 0px;
+	transition: transform 0.5s ease 0s, top 0.2s ease 0s;
+	width: 40px;
+	z-index: 999;
+}
+.sw-bottom {
+	background: #000 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 4px;
+	height: 3px;
+	position: relative;
+	top: 5px;
+	transition: transform 0.5s ease 0.2s, top 0.2s ease 0s;
+	width: 40px;
+	left: 5px;
+	z-index: 999;
+}
+.sw-footer {
+	background: #000 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 4px;
+	height: 3px;
+	position: relative;
+	top: 10px;
+	transition: all 0.5s ease 0.1s;
+	width: 40px;
+	left: 5px;
+	z-index: 999;
+}
+.sandwich.active .sw-topper {
+	top: 10px;
+  -webkit-transform: rotate(-45deg);
+	  -ms-transform: rotate(-45deg);
+		  transform: rotate(-45deg);
+}
+.sandwich.active .sw-bottom {
+	top: 6px;
+  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+		  transform: rotate(45deg);
+}
+.sandwich.active .sw-footer {
+	opacity: 0;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+	  -ms-transform: rotate(180deg);
+		  transform: rotate(180deg);
+}
+.nav{
+	display: none;
+}
+.top-menu-s ul{
+	margin: 0;
+	padding: 20px;
+}
+.top-menu-s ul li{
+	list-style: none;
+}
+.top-menu-s ul li a{
+	color: #fff;
+	font-family: "Museo Sans Cyrl 500";
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.top-menu-s ul li{
+	padding: 10px;
 }

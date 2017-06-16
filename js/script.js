@@ -28,8 +28,16 @@ $(document).ready(function(){
 		$(this).remove();
 	});
 
-	$(".menu li a").hover(function(){
-		$(this).next().show();
+	$(".toggle_mnu").click(function() {
+		$(".sandwich").toggleClass("active");
+	});
+
+	$(".toggle_mnu").click(function() {
+		if ($(".nav").is(":visible")) {
+			$(".nav").fadeOut(600);
+		} else {
+			$(".nav").fadeIn(600);
+		};
 	});
 	
 });

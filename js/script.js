@@ -27,6 +27,10 @@ $(document).ready(function(){
 	$(".overlay").click(function(){
 		$(this).remove();
 	});
+
+	$(".menu li a").hover(function(){
+		$(this).next().show();
+	});
 	
 });
 

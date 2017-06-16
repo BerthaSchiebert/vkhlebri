@@ -72,6 +72,9 @@
 	.news-item-l{
 		text-align: center;
 	}
+	.header-top2{
+		display: none!important;
+	}
 }
 
 /* Small Devices, Tablets */

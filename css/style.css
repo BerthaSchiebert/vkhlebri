@@ -1,3 +1,4 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 html, body{
 	margin: 0;
 	padding: 0;
@@ -5,6 +6,19 @@ html, body{
 	font-family: "OpenSansSemiBold", sans-serif;
 	font-size: 14px;
 	background: #fcfdfd!important;
+	height: 100%;
+}
+.wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+}
+.main_content {
+	flex: 1;
 }
 a, button, input{
 	outline: none!important;
@@ -176,7 +190,6 @@ a, button, input{
 	margin-left: -23px;
     margin-top: 15px;
     z-index: 9999;
-    display: none;
 }
 .menu-second > li{
 	list-style-type: none;
@@ -223,6 +236,10 @@ a, button, input{
 .menu-s{
 	position: absolute;
 	z-index: 999;
+	display: none;
+}
+.menu-s.menu-show{
+	display: block;
 }
 .search-wrap{
 	width: 185px;
@@ -1450,17 +1467,12 @@ td{
 	padding-top: 35px;
 	padding-left: 25px;
 	padding-right: 25px;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	border-top: 1px solid transparent;
 }
 .news-item:hover{
 	background: #fdfdfd;
 	-webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.17);
 	-moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.17);
 	box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.17);
-	border: 1px solid #d9d9d9;
-	margin-top: -1px;
 }
 .news .link-home{
 	margin-top: 50px;

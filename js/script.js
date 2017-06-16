@@ -15,6 +15,10 @@ $(document).ready(function(){
 		type: 'image'
 	});
 
+	$('.obj-item').magnificPopup({
+		type: 'image'
+	});
+
 	$(".up_button img").click(function(){
 		$("html, body").animate({ scrollTop: 0 }, 600);
 		return false;

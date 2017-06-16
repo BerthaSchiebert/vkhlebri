@@ -14,6 +14,12 @@
 	.object-wrap{
 		text-align: center;
 	}
+	.news-text{
+		width: 60%;
+	}
+	.news-text-l{
+		width: 40%;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -51,6 +57,20 @@
 	}
 	.form-contact{
 		margin: 30px auto 50px;
+	}
+	.news-item{
+		text-align: center;
+	}
+	.news-text{
+		margin-top: 20px;
+		width: 100%;
+		margin-left: 0;
+	}
+	.news-text-l{
+		width: 100%;
+	}
+	.news-item-l{
+		text-align: center;
 	}
 }
 

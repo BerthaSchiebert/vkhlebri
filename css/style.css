@@ -1306,7 +1306,7 @@ a, button, input{
 table{
 	font-size: 15px;
 	color: #000;
-	font-size: "OpenSansRegular";
+	font-family: "OpenSansRegular";
 	background: #fcfdfd;
 	text-align: center;
 }
@@ -1408,4 +1408,125 @@ td{
 }
 .object .sec-2-item-text{
 	background-color: rgba(86, 70, 53, 0.73);
+}
+.object .link-home{
+	margin-top: 110px;
+}
+.news-date{
+	font-size: 14px;
+	color: #908c8c;
+	font-family: "OpenSansItalic";
+}
+.news-text h4 a,
+.news-item-l h4{
+	font-size: 18px;
+	color: #729a1f;
+	font-family: "OpenSansBold";
+}
+.news-text p,
+.news-text-l{
+	font-size: 15px;
+	color: #000;
+	font-family: "OpenSansRegular";
+	line-height: 22px;
+}
+.news-img{
+	width: 290px;
+	display: inline-block;
+	vertical-align: top;
+}
+.news-img img{
+	width: 100%;
+}
+.news-text{
+    display: inline-block;
+    width: 68%;
+    margin-left: 25px;
+    text-align: left;
+}
+.news-item{
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 30px;
+	padding-top: 35px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 1px solid transparent;
+}
+.news-item:hover{
+	background: #fdfdfd;
+	-webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.17);
+	-moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.17);
+	box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.17);
+	border: 1px solid #d9d9d9;
+	margin-top: -1px;
+}
+.news .link-home{
+	margin-top: 50px;
+}
+.news .pagynation{
+	margin-top: 50px;
+}
+.link-back{
+	text-decoration: underline;
+}
+.news-img-l{
+	max-width: 500px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+}
+.news-img-l img{
+	width: 100%;
+}
+.news-text-l{
+	width: 55%;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 15px;
+	text-align: left;
+}
+.news-item-l .news-date{
+	margin-bottom: 15px;
+	text-align: left;
+}
+.news-item-l h4{
+	text-align: left;
+}
+.object-item p{
+	font-size: 15px;
+	color: #000;
+	line-height: 25px;
+	font-family: "OpenSansRegular";
+	margin-bottom: 25px;
+}
+.object-item.sec-content h2{
+	margin-bottom: 20px;
+}
+.object-item .link-home{
+	margin-top: 100px;
+}
+.object-item-img{
+	margin-bottom: 20px;
+	max-height: 335px;
+}
+.object-item-img img{
+	width: 100%;
+}
+.tech-info.sec-content h2{
+	margin-bottom: 15px;
+}
+.tech-info .news-item{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.tech-info .news-img{
+	width: 210px;
+}
+.tech-info .pagynation{
+	margin-top: 60px;
+}
+.tech-info .link-home{
+	margin-top: 60px;
 }

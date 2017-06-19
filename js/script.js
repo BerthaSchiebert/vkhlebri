@@ -11,6 +11,10 @@ $(document).ready(function(){
 		type: 'inline'
 	});
 
+	$('.popup-success').magnificPopup({
+		type: 'inline'
+	});
+
 	$('.graphic-img').magnificPopup({
 		type: 'image'
 	});
